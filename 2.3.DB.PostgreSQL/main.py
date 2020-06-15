@@ -96,7 +96,7 @@ if __name__ == '__main__':
     #insert_course('Програмирование на Go')
     #add_students(4, students)
     #add_student(student)
-    #print(get_student(3))
+    #print(get_student(2))
     #print(get_students(4))
 
 
