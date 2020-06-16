@@ -4,11 +4,6 @@ import psycopg2 as pg
 def create_db(): # создает таблицы
     with pg.connect(database='netology', user='netology', password='netology', host='10.85.132.233', port=5432) as conn:
         cur = conn.cursor()
-
-        cur.execute('DROP TABLE student_course;')
-        cur.execute('DROP TABLE student;')
-        cur.execute('DROP TABLE course;')
-
         cur.execute('''
                 create table if NOT EXISTS student (
                 id SERIAL PRIMARY KEY NOT NULL,
